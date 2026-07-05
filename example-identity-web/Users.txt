@@ -1,3 +1,0 @@
-Test Users:
-1.user01,password01
-2.user02,password02
