@@ -1,0 +1,41 @@
+<div class="page">
+  <header class="title-bar">IT 02-2</header>
+
+  <main class="content-box">
+    <div class="form">
+      <div class="form-fields">
+        <div class="form-row">
+          <label for="register-user">User</label>
+          <input
+            id="register-user"
+            type="text"
+            [(ngModel)]="username">
+        </div>
+
+        <div class="form-row">
+          <label for="register-password">Password</label>
+          <input
+            id="register-password"
+            type="password"
+            [(ngModel)]="password">
+        </div>
+
+        <div class="form-row">
+          <label for="register-confirm-password">Confirm Password</label>
+          <input
+            id="register-confirm-password"
+            type="password"
+            [(ngModel)]="confirmPassword">
+        </div>
+      </div>
+
+      @if (errorMessage()) {
+        <p class="error-banner" role="alert">{{ errorMessage() }}</p>
+      }
+
+      <button class="btn" type="button" (click)="register()">
+        สมัครสมาชิก
+      </button>
+    </div>
+  </main>
+</div>
