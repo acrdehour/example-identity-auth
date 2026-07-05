@@ -86,7 +86,7 @@ dotnet run
 Swagger
 
 ```
-https://localhost:7011/swagger
+http://localhost:5241/swagger
 ```
 
 ---
